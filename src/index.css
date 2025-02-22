@@ -1,0 +1,43 @@
+:root {
+	--color-primary: #3498db;
+	--color-disabled: #ccc;
+	--color-bar: #333;
+	--color-bar-hover: #fff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: var(--color-primary);
+	display: flex;
+	justify-content: center;
+	padding-top: 32px;
+}
+
+/* Pasek przewijania (dla przeglądarek opartych na WebKit, np. Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+	width: 10px; /* Szerokość pionowego paska */
+	height: 10px; /* Wysokość poziomego paska */
+}
+
+/* Tło paska przewijania */
+::-webkit-scrollbar-track {
+	background: var(--color-bar-hover); /* Kolor tła paska */
+	border-radius: 5px; /* Zaokrąglone rogi */
+}
+
+/* Pasek przewijania (ruchoma część) */
+::-webkit-scrollbar-thumb {
+	background: var(--color-bar); /* Kolor główny */
+	border-radius: 5px; /* Zaokrąglenie krawędzi */
+}
+
+/* Efekt najechania myszką na pasek przewijania */
+::-webkit-scrollbar-thumb:hover {
+	background: #ccc; /* Nieco ciemniejszy odcień koloru głównego */
+}

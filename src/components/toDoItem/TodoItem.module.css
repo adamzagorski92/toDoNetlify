@@ -1,0 +1,28 @@
+.item {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	border-top: 1px solid #e0e0e0;
+	margin-top: 16px;
+	padding-top: 16px;
+	min-width: 400px;
+}
+
+.name {
+	width: 100%;
+}
+
+.done {
+	text-decoration: line-through;
+}
+
+.buttonsContainer {
+	min-width: 180px;
+	display: flex;
+	justify-content: space-around;
+	border: 1px solid #e0e0e0;
+	padding: 8px;
+	border-radius: 3px;
+	gap: 8px;
+}
